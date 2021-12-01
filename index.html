@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link rel="stylesheet" href="css/vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<div class="home_screen">
+    <div class="container-fluid no--padding">
+        <div class="row">
+            <div class="col-sm-12 no--padding">
+                <main>
+                    <header>
+                        <div class="header_content_wrapper">
+                             <div class="logo_wrapper">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="" height="52" viewBox="0 0 160 52"><defs><style>.a{fill:#efefef;font-size: 37px;font-family: Helvetica-CondensedBlack;font-weight:800;}.b{fill:#fff;}</style></defs><g transform="translate(-202 -89)"><text font-family="Helvetica-CondensedBlack" class="a" transform="translate(263 130)"><tspan x="0" y="0">Fudge</tspan></text><path class="b" d="M26,52A26.007,26.007,0,0,1,15.88,2.043,26.007,26.007,0,0,1,36.121,49.957,25.837,25.837,0,0,1,26,52Zm.5-6A2.5,2.5,0,1,0,29,48.5,2.5,2.5,0,0,0,26.5,46Zm0-10A3.5,3.5,0,1,0,30,39.5,3.5,3.5,0,0,0,26.5,36ZM26,22a6,6,0,1,0,6,6A6.007,6.007,0,0,0,26,22ZM26,1a9,9,0,1,0,9,9A9.01,9.01,0,0,0,26,1Z" transform="translate(254 89) rotate(90)"/></g></svg>
+                             </div>
+                            
+                             <div class="header_text_wrapper hidden">
+                                 <div class="header_text header_content">
+                                     <h2>All your finances in one place.</h2>
+                                     <p>Find out how our team of highly qualified financial consultants can help<br>you achieve your financial goals.</p>
+                                 </div>
+                             
+                                 <div class="button_wrapper header_content"><button type="button">View Dashboard</button></div> 
+                             </div>
+                        </div>
+                        <div class="down_arrow_wrapper">
+                             <img src="./images/arrow-down.png" alt="Down arrow">
+                         </div>
+                      
+                    </header>
+     
+                   
+                </main>
+               
+
+               <!-- dashboard section -->
+
+                <div class="preload-wrapper dashboard_wrapper hidden">
+                      <div class="line_loader hidden"></div>
+                
+                    <div id="loader-wrapper">
+                      
+                        <div class="loader-section section-left"></div>
+                        <div class="loader-section section-right"></div>
+                    </div>
+                  
+                    <div class="container-fluid dashboard_container no--padding">
+                        <div class="row">
+                          
+                            <div class="col-lg-3 menuBar_l d-none d-lg-block">
+                                <div class="menu_list">
+                                    <div class="menu_logo_wrapper">
+                                   
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="" height="52" viewBox="0 0 160 52"><defs><style>.a{fill:#efefef;font-size: 37px;font-family: Helvetica-CondensedBlack;font-weight:800;}.b{fill:#fff;}</style></defs><g transform="translate(-202 -89)"><text font-family="Helvetica-CondensedBlack" class="a" transform="translate(263 130)"><tspan x="0" y="0">Fudge</tspan></text><path class="b" d="M26,52A26.007,26.007,0,0,1,15.88,2.043,26.007,26.007,0,0,1,36.121,49.957,25.837,25.837,0,0,1,26,52Zm.5-6A2.5,2.5,0,1,0,29,48.5,2.5,2.5,0,0,0,26.5,46Zm0-10A3.5,3.5,0,1,0,30,39.5,3.5,3.5,0,0,0,26.5,36ZM26,22a6,6,0,1,0,6,6A6.007,6.007,0,0,0,26,22ZM26,1a9,9,0,1,0,9,9A9.01,9.01,0,0,0,26,1Z" transform="translate(254 89) rotate(90)"/></g></svg>
+                                    </div>
+                                    <div id="menuWrapper">
+                                        <div class="stepwizard">
+                                            <div class="stepwizard-row setup-panel">
+                                                <div class="stepwizard-step inline_wrapper">
+                                                    <div class="menu_bg dashboard"></div>
+                                                    <a href="#step-1" type="button" class="btn btn-success btn-circle-menu">Dashboard</a>
+                                                </div>
+                                                <div class="stepwizard-step inline_wrapper">
+                                                    <div class="menu_bg advisors"></div>
+                                                    <a href="#step-2" type="button" class="btn btn-default btn-circle-menu" disabled="disabled">Advisors</a>
+                                                </div>
+                                                <div class="stepwizard-step inline_wrapper">
+                                                    <div class="menu_bg my-documents"></div>
+                                                    <a href="#step-3" type="button" class="btn btn-default btn-circle-menu" disabled="disabled">My Documents</a>
+                                                </div>
+                                                <div class="stepwizard-step inline_wrapper">
+                                                    <div class="menu_bg news-feed"></div>
+                                                    <a href="#step-4" type="button" class="btn btn-default btn-circle-menu" disabled="disabled">News feed</a>
+                                                </div>
+                                                <div class="stepwizard-step inline_wrapper">
+                                                    <div class="menu_bg support"></div>
+                                                    <a href="#step-5" type="button" class="btn btn-default btn-circle-menu" disabled="disabled">Support</a>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                 
+                                </div>
+                            </div>
+                            <div class="header_menu d-lg-none">
+                                <div class="navbar-brand" href="#Home">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="" height="" viewBox="0 0 160 52"><defs><style>.a{fill:#efefef;font-size: 37px;font-family: Helvetica-CondensedBlack;font-weight:800;}.b{fill:#fff;}</style></defs><g transform="translate(-202 -89)"><text font-family="Helvetica-CondensedBlack" class="a" transform="translate(263 130)"><tspan x="0" y="0">Fudge</tspan></text><path class="b" d="M26,52A26.007,26.007,0,0,1,15.88,2.043,26.007,26.007,0,0,1,36.121,49.957,25.837,25.837,0,0,1,26,52Zm.5-6A2.5,2.5,0,1,0,29,48.5,2.5,2.5,0,0,0,26.5,46Zm0-10A3.5,3.5,0,1,0,30,39.5,3.5,3.5,0,0,0,26.5,36ZM26,22a6,6,0,1,0,6,6A6.007,6.007,0,0,0,26,22ZM26,1a9,9,0,1,0,9,9A9.01,9.01,0,0,0,26,1Z" transform="translate(254 89) rotate(90)"/></g></svg>
+                                </div>
+                                <div class="menu">
+                                    <div class="lu-menu" id="">
+                                        <ul class="navbar-nav text-uppercase menu--valentine">
+                                            <li class="nav-item menu__item nav-item-one active">
+                                                <a class="nav-link menu__link" href="#step-1">Dashboard <span class="sr-only">(current)</span></a>
+                                            </li>
+                                            <li class="nav-item menu__item nav-item-two">
+                                                <a class="nav-link menu__link" href="step-2">Advisors</a>
+                                            </li>
+                                            <li class="nav-item menu__item nav-item-three">
+                                                <a class="nav-link menu__link" href="step-3">My Documents</a>
+                                            </li>
+                                
+                                            <li class="nav-item menu__item nav-item-three">
+                                                <a class="nav-link menu__link" href="step-4">News feed</a>
+                                            </li>
+                                            <li class="nav-item menu__item nav-item-three">
+                                                <a class="nav-link menu__link" href="step-5">Support</a>
+                                            </li>
+                                         
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="menu__toggler"><span></span></div>
+                            </div>
+                            
+   
+                            <div class="col-lg-9 col-sm-12 no--padding">
+                                <div class="panel panel-primary setup-content" id="step-1">
+                                    <div class="row">
+                                        <div class="col-md-7">
+                                            <div class="login_person_details_wrapper inline_wrapper">
+                                                <div class="person_img_wrapper"><img class="img-fluid" src="./images/alex.png" alt="Logged in user"></div>
+                                                <p class="welcome_note">Welcome <strong>Alex Martin.</strong> Here's your personalized financial dashboard</p>
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="col-md-5">
+                                            <nav>
+                                                <div class="dropdown hover">
+                                                  <a href="#">Currency: GBP</a>
+                                                  <ul>
+                                                    <li><a href="#">Item1</a></li>
+                                                    <li><a href="#">Item2</a></li>
+                                                    <li><a href="#">Item3</a></li>
+                                                 
+                                                  </ul>
+                                                </div>
+                                                <div class="dropdown hover">
+                                                    <a href="#">My Account</a>
+                                                    <ul>
+                                                      <li><a href="#">Item1</a></li>
+                                                      <li><a href="#">Item2</a></li>
+                                                      <li><a href="#">Item3</a></li>
+                                                   
+                                                    </ul>
+                                                  </div>
+                                                
+                                            </nav>
+                                        </div>
+                                     
+                                        
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="head_wrapper inline_wrapper">
+                                                <h3>Dashboard Home</h3>
+                                           
+                                                <hr class="border_div">
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-6 col-sm-12">
+                                            <div class="row">
+                                                <div class="col-sm-12 no--padding">
+                                                    <div class="headings inline_wrapper">
+                                                        <h5>Quick Stats</h5>
+                                                     
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 no--padding">
+                                                    <div class="financial_wrapper shadowed--box">
+                                                        <div class="financial_details">
+                                                            <div class="rate"><h3>£563,350</h3></div>
+                                                            <p class="rate-description">Your net worth as of today</p>
+                                                        </div>
+                                                    </div>
+                                                   
+                                                </div>
+                                                <div class="col-md-3 no--padding">
+                                                    <div class="financial_wrapper shadowed--box">
+                                                        <div class="financial_details">
+                                                            <div class="rate"><h4>£12,430</h4></div>
+                                                            <p class="rate-description">Monthy Cashflow</p>
+                                                        </div>
+                                                    </div>
+                                                  
+                                                </div>
+                                                <div class="col-md-3 no--padding">
+                                                    <div class="financial_wrapper shadowed--box last--div">
+                                                        <div class="financial_details">
+                                                            <div class="rate"><h4>£161,430</h4></div>
+                                                            <p class="rate-description">Overall Liabilities</p>
+                                                        </div>
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-xl-6 col-sm-12 no--padding">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="headings inline_wrapper">
+                                                        <h5>My financial health</h5>
+                                                        <button class="gray_btn">View financial health</button>
+                                                    </div>
+                                                    <div class="content_wrapper line_progress_bar_wrapper shadowed--box">
+                                                       
+                                                        <div class="meter_wrapper">
+                                                            <div class="meter">
+                                                                <span style="width:88%;">
+                                                                    <span class="progress"></span>
+                                                                    <div class="progress_bar_indicator_wrapper">
+                                                                        
+                                                                    </div>
+                                                                    <span class="progress_bar_indicator">88%</span>
+                                                                </span>
+                                                                <div class="progress_rating_wrapper">
+                                                                    <div class="progress_rating">
+                                                                        <p>Poor</p>
+                                                                    </div>
+                                                                    <div class="progress_rating">
+                                                                        <p>Average</p>
+                                                                    </div>
+                                                                    <div class="progress_rating">
+                                                                        <p>Good!</p>
+                                                                    </div>
+                                                                </div>
+                                                              
+                                                            </div>
+                                                        </div>
+                                                     
+                                                     
+
+                                                        <div class="progress_bar_content">
+                                                            <p>Your financial health status is <span class="green--text">GOOD.</span> However there’s still room for improvement. <a href="">See how you can improve</a></p>
+                                                        </div>
+                                                     
+                                                    </div>
+                                                  
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <div class="headings inline_wrapper">
+                                                <h5>My performance</h5>
+                                            
+                                            </div>
+                                            <div class="financial_graph"><img src="./images/graph.png" alt="" class="img-fluid"></div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="headings inline_wrapper">
+                                                <h5>My goals</h5>
+                                                <button class="gray_btn">View all Goals</button>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 no--padding">
+                                                    <div class="pie_chart_wrapper shadowed--box">
+                                                        <h6>Retirement</h6>
+                                                        <div class="chart_wrapper">
+                                                          
+                                                            <div class="circular_progress mx-auto" data-value='65'>
+                                                                <span class="circular_progress-left">
+                                                                    <span class="circular_progress-bar border-success">
+                                                                     
+                                                                    </span>
+                                                                 
+                                                                </span>
+                                                                <span class="circular_progress-right">
+                                                                    <span class="circular_progress-bar border-success"></span>
+                                                                </span>
+                                                                <div class="circular_progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                                                                    <h4>65%</h4>
+                                                                    <span>On track</span>
+                                                                </div>
+                                                            </div>
+                                                     
+                                                        </div>
+                                                        <div class="chart_description_container flex_wrapper">
+                                                            <span class="chart_description">£161,430</span>
+                                                            <span class="chart_description disabled">£2000,000</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 no--padding">
+                                                    <div class="pie_chart_wrapper shadowed--box">
+                                                        <h6>Retirement</h6>
+                                                        <div class="chart_wrapper">
+                                                          
+                                                            <div class="circular_progress mx-auto" data-value='78'>
+                                                                <span class="circular_progress-left">
+                                                                    <span class="circular_progress-bar border-success">
+                                                                      
+                                                                    </span>
+                                                                    
+                                                                </span>
+                                                                <span class="circular_progress-right">
+                                                                    <span class="circular_progress-bar border-success"></span>
+                                                                </span>
+                                                                <div class="circular_progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                                                                    <h4>78%</h4>
+                                                                    <span>On track</span>
+                                                                </div>
+                                                            </div>
+                                                     
+                                                        </div>
+                                                        <div class="chart_description_container flex_wrapper">
+                                                            <span class="chart_description">£161,430</span>
+                                                            <span class="chart_description disabled">£2000,000</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4 no--padding">
+                                                    <div class="pie_chart_wrapper shadowed--box last--div">
+                                                        <h6>Retirement</h6>
+                                                        <div class="chart_wrapper">
+                                                          
+                                                            <div class="circular_progress mx-auto" data-value='46'>
+                                                                <span class="circular_progress-left">
+                                                                    <span class="circular_progress-bar border-success">
+                                                                    
+                                                                    </span>
+                                                                    
+                                                                </span>
+                                                                <span class="circular_progress-right">
+                                                                    <span class="circular_progress-bar border-success"></span>
+                                                                </span>
+                                                                <div class="circular_progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                                                                    <h4>46%</h4>
+                                                                    <span>On track</span>
+                                                                </div>
+                                                            </div>
+                                                     
+                                                        </div>
+                                                        <div class="chart_description_container flex_wrapper">
+                                                            <span class="chart_description">£161,430</span>
+                                                            <span class="chart_description disabled">£2000,000</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  
+
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <div class="bordered--div social_media_content_wrapper">
+                                                <div class="panel panel-primary news-setup-content" id="news-step-1">
+                                                    <div class="news_section_wrapper">
+                                                        <h5>Industry news</h5>
+                                                        <div class="news_content_wrapper">
+                                                            <span class="sub_text">21 May 2021</span>
+                                                            <h5>The standard Lorem Ipsum passage, used since the 1500s</h5>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                                            <a href="" class="read_more">Read full article</a>
+                                                        
+                                                        </div>
+            
+                                                        <div class="news_content_wrapper">
+                                                            <span class="sub_text">21 May 2021</span>
+                                                            <h5>The standard Lorem Ipsum passage, used since the 1500s</h5>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                                            <a href="" class="read_more">Read full article</a>
+                                                        
+                                                        </div>
+                                                    
+                                                    </div>
+                                                </div>
+                                                <div class="panel panel-primary news-setup-content" id="news-step-2">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque eveniet hic, error ipsam suscipit quasi ullam nihil reiciendis provident minus nesciunt totam maiores. Blanditiis, praesentium. Possimus aspernatur cum aliquid corrupti.</p>
+                                                </div>
+                                            
+                                                <div id="paginationWrapper">
+                                                    <div class="stepwizard">
+                                                        <div class="stepwizard-row setup-panel">
+                                                            <div class="btn prevBtn prev_wrapper disabled"></div>
+                                                        
+                                                            <div class="stepwizard-step">
+                                                                <a href="#news-step-1" type="button" class="btn btn-success btn-circle">1</a>
+                                                            </div>
+                                                            <div class="stepwizard-step">
+                                                                <a href="#news-step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+                                                            </div>
+                                                            <div class="stepwizard-step">
+                                                                <a href="#news-step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+                                                            </div>
+                                                            <div class="stepwizard-step">
+                                                                <a href="#news-step-4" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
+                                                            </div>
+                                                            <div class="stepwizard-step">
+                                                                <a href="#news-step-5" type="button" class="btn btn-default btn-circle" disabled="disabled">5</a>
+                                                            </div>
+                                                            <div class="stepwizard-step">
+                                                                <a href="#news-step-6" type="button" class="btn btn-default btn-circle" disabled="disabled">6</a>
+                                                            </div>
+                                                            <div class="stepwizard-step">
+                                                                <a href="#news-step-7" type="button" class="btn btn-default btn-circle" disabled="disabled">7</a>
+                                                            </div>
+                                                            <div class="btn nextBtn next_wrapper"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3">
+                                            <div class="bordered--div social_media_content_wrapper">
+                                                <h5>Top Comments</h5>
+                                                <div class="comments_wrapper">
+                                                    <div class="comments_section inline_wrapper">
+                                                        <div class="user_img"><img class="img-fluid" src="./images/jack.png" alt=""><span class="status_notification active"></span></div>
+                                                        <div class="user_content">
+                                                            <h6 class="user_name">Jack Sparrows</h6>
+                                                            <span class="sub_text">2 hrs ago</span>
+                                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus adipisci in nulla voluptatibus, non culpa similique, earum dolores mollitia pariatur temporibus illo odio nobis! Recusandae alias itaque odio vero voluptatibus?</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="comments_section inline_wrapper">
+                                                        <div class="user_img"><img class="img-fluid" src="./images/queen.png" alt=""><span class="status_notification active"></span></div>
+                                                        <div class="user_content">
+                                                            <h6 class="user_name">Queen Latifah</h6>
+                                                            <span class="sub_text">2 hrs ago</span>
+                                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus adipisci in nulla voluptatibus, non culpa similique, earum dolores mollitia pariatur temporibus illo odio nobis! Recusandae alias itaque odio vero voluptatibus?</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="comments_section inline_wrapper">
+                                                        <div class="user_img"><img class="img-fluid" src="./images/elon.png" alt=""><span class="status_notification active"></span></div>
+                                                        <div class="user_content">
+                                                            <h6 class="user_name">Elon Musk</h6>
+                                                            <span class="sub_text">2 hrs ago</span>
+                                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus adipisci in nulla voluptatibus, non culpa similique, earum dolores mollitia pariatur temporibus illo odio nobis! Recusandae alias itaque odio vero voluptatibus?</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="comments_section inline_wrapper">
+                                                        <div class="user_img"><img class="img-fluid" src="./images/warren.png" alt=""><span class="status_notification offline"></span></div>
+                                                        <div class="user_content">
+                                                            <h6 class="user_name">Warren Buffet</h6>
+                                                            <span class="sub_text">2 hrs ago</span>
+                                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus adipisci in nulla voluptatibus, non culpa similique, earum dolores mollitia pariatur temporibus illo odio nobis! Recusandae alias itaque odio vero voluptatibus?</p>
+                                                        </div>
+                                                    </div>
+                                                  
+                                                </div>
+                                             
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3">
+                                            <div class="bordered--div social_media_content_wrapper">
+                                                <h5>Users</h5>
+                                                <div class="user_wrapper">
+                                                    <div class="user_section inline_wrapper">
+                                                        <div class="user_img"><img class="img-fluid" src="./images/don.png" alt=""></div>
+                                                        <div class="user_content">
+                                                            <h6 class="user_name">Don Corleone</h6>
+                                                            <div class="inline_wrapper">
+                                                                <span class="status_notification active"></span>
+                                                                <span class="status_text">Online</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="user_wrapper">
+                                                    <div class="user_section inline_wrapper">
+                                                        <div class="user_img"><img class="img-fluid" src="./images/joker.png" alt=""></div>
+                                                        <div class="user_content">
+                                                            <h6 class="user_name">Joker</h6>
+                                                            <div class="inline_wrapper">
+                                                                <span class="status_notification active"></span>
+                                                                <span class="status_text">Online</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="user_wrapper">
+                                                    <div class="user_section inline_wrapper">
+                                                        <div class="user_img"><img class="img-fluid" src="./images/hans.png" alt=""></div>
+                                                        <div class="user_content">
+                                                            <h6 class="user_name">Hans Landa</h6>
+                                                            <div class="inline_wrapper">
+                                                                <span class="status_notification active"></span>
+                                                                <span class="status_text">Online</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="user_wrapper">
+                                                    <div class="user_section inline_wrapper">
+                                                        <div class="user_img"><img class="img-fluid" src="./images/jules.png" alt=""></div>
+                                                        <div class="user_content">
+                                                            <h6 class="user_name">jules winnfield</h6>
+                                                            <div class="inline_wrapper">
+                                                                <span class="status_notification offline"></span>
+                                                                <span class="status_text">Offline</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="user_wrapper">
+                                                    <div class="user_section inline_wrapper">
+                                                        <div class="user_img"><img class="img-fluid" src="./images/wonder.png" alt=""></div>
+                                                        <div class="user_content">
+                                                            <h6 class="user_name">wonder woman</h6>
+                                                            <div class="inline_wrapper">
+                                                                <span class="status_notification offline"></span>
+                                                                <span class="status_text">Offline</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="user_wrapper">
+                                                    <div class="user_section inline_wrapper">
+                                                        <div class="user_img"><img class="img-fluid" src="./images/sarah.png" alt=""></div>
+                                                        <div class="user_content">
+                                                            <h6 class="user_name">sarah connor</h6>
+                                                            <div class="inline_wrapper">
+                                                                <span class="status_notification offline"></span>
+                                                                <span class="status_text">Offline</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="panel panel-primary setup-content" id="step-2">
+                                    <div style="height: 100vh;"></div>
+                                    
+                                </div>
+                                
+                            </div>
+                          
+                        </div>
+                    
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="js/vendors/gsap/gsap.min.js"></script>
+<script src="js/vendors/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+    
+    $('input').on('click', function () {
+         $(".progress-bar").loading();
+    });
+</script>
+<script>
+    const toggler = document.querySelector('.menu__toggler');
+    const menu    = document.querySelector('.menu');
+    toggler.addEventListener('click', () => {
+    toggler.classList.toggle('active');
+    menu.classList.toggle('active');
+    })
+</script>
+
+</body>
+</html>

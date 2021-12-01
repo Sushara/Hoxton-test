@@ -1,0 +1,196 @@
+/*
+ * MENU BUTTON
+ */
+ .menu__toggler {
+    position: absolute;
+    right: 0;
+    z-index: 999;
+    height: 60px;
+    width: 50px;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    top: 0;
+  
+    span{
+      margin-left: 9px;
+    }
+    
+    span,
+    span::before,
+    span::after {
+      position: absolute;
+      content: '';
+      width: 25px;
+      height: 2.5px;
+      background: #fafafa;
+      border-radius: 20px;
+      transition: 500ms cubic-bezier(0.77, 0, 0.175, 1);
+    }
+    
+    span::before {
+      top: -8px;
+    }
+    
+    span::after {
+      top: 8px;
+    }
+    
+    &.active > span  {
+      background: transparent;
+    }
+  
+    &.active > span::before,
+    &.active > span::after {
+      background: $white;
+      top: 0px;
+    }
+  
+    &.active > span::before  {
+      transform: rotate(-225deg);
+    }
+  
+    &.active > span::after  {
+      transform: rotate(225deg);
+    }
+    
+  }
+  
+  /*
+   * SLIDING MENU PANEL
+   */
+  .menu {
+    position: absolute;
+    right: -90%;
+    z-index: 998;
+    color: $white;
+    background: $green;
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 300ms right cubic-bezier(0.77, 0, 0.175, 1);
+   top: 0;
+   
+    &.active {
+        right: 0;
+   
+    }
+    p {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+  }
+  .header_menu.d-lg-none{
+    position: fixed;
+    
+    width: 100%;
+    top: 0;
+    z-index: 99999;
+    padding: 15px;
+    .nav-link{
+        color: white;
+        font-size: 12px;
+    }
+    @include mq('lg','max'){
+      background-color: $green;
+    }
+  }
+  .navbar-brand{
+    width: 80px;
+    padding: 0;
+  }
+  nav{
+    @include mq('md'){
+      float: right;
+    }
+  
+  }
+
+.dropdown {
+   
+    display: inline-block;
+    position: relative;
+ 
+  }
+  .dropdown.toggle > input {
+    display: none;
+  }
+  .dropdown > a, .dropdown.toggle > label {
+    border-radius: 2px;
+  
+  }
+  .dropdown > a::after, .dropdown.toggle > label::after {
+    content: "";
+    float: right;
+    margin: 16px 15px 0 5px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid $black;
+  }
+  .dropdown ul {
+    list-style-type: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    
+    overflow: hidden;
+    z-index: 10;
+    background-color: #bab7b7;
+  }
+  .dropdown a, .dropdown.toggle > label {
+    display: block;
+    text-decoration: none;
+    line-height: 40px;
+    font-size: 13px;
+    color: $black;
+    background-color: #FFF;
+  }
+  .dropdown li {
+    height: 0;
+    overflow: hidden;
+    transition: all 500ms;
+  }
+  .dropdown.hover li {
+    transition-delay: 300ms;
+  }
+  .dropdown li:first-child a {
+    border-radius: 2px 2px 0 0;
+  }
+  .dropdown li:last-child a {
+    border-radius: 0 0 2px 2px;
+  }
+  .dropdown li:first-child a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #FFF;
+    margin: -10px 0 0 30px;
+  }
+  .dropdown a:hover, .dropdown.toggle > label:hover, .dropdown.toggle > input:checked ~ label {
+    background-color: #EEE;
+    color: #666;
+  }
+  .dropdown > a:hover::after, .dropdown.toggle > label:hover::after, .dropdown.toggle > input:checked ~ label::after {
+    border-top-color: #AAA;
+  }
+  .dropdown li:first-child a:hover::before {
+    border-bottom-color: #EEE;
+  }
+  .dropdown.hover:hover li, .dropdown.toggle > input:checked ~ ul li {          
+    height: 40px;
+  }
+  .dropdown.hover:hover li:first-child, .dropdown.toggle > input:checked ~ ul li:first-child {
+    padding: 0;
+  }

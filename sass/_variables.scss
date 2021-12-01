@@ -1,0 +1,17 @@
+// // Variables
+
+$white:  #fff !default;
+$black:  #000 !default;
+$green: #043414 !default;
+$light-green: #003913;
+
+
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px
+) !default;

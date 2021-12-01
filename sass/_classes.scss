@@ -1,0 +1,21 @@
+//Common classes 
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+.hide{
+	opacity: 0;
+}
+.no--padding--right{
+	padding-right: 0px;
+}
+.no--padding--left{
+	padding-left: 0px;
+}

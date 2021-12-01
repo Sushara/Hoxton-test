@@ -1,0 +1,31 @@
+
+$media-query-units: em, px;
+@mixin mq($size, $type: min, $property: width) {
+
+	@if map_has_key($grid-breakpoints, $size) {
+		$size: map_get($grid-breakpoints, $size);
+	}
+
+	@if $type == max {
+		$negative: if($media-query-units == em, 0.01em, 1px);
+		$size: $size - $negative;
+	}
+
+	@media only screen and (#{$type}-#{$property}: $size) {
+		@content;
+	}
+
+}
+
+
+%background{
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+%no-padding{
+	padding: 0;
+}
+.no--padding{
+	padding: 0;
+}
+

@@ -1,0 +1,20 @@
+// Bootstrap overrides
+
+
+$gray: #9192a1;
+$dark-gray: #A9A9A9;
+$full-width : 100%;
+$icon-size: 40px;
+$icon-height: 20px;
+$icon-width: 30px;
+$line-size: 3px;
+
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 578px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px,
+) !default;

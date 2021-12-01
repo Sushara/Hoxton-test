@@ -1,0 +1,124 @@
+/*Index page styles*/
+.home_screen{
+   
+    height: 100vh;
+   
+    main{
+        height: 100vh;
+    }
+    
+    @extend %background;
+    background-image: url("../images/main_bg_1.png"), url("../images/main_bg_2.png");
+    background-position: center center, center 25px;
+    transition: background-position 1s ease;
+    @include mq('lg'){
+        background-position: center center, center -500px;
+    }
+
+    &.adjust--screen{
+        background-position: center center, center -10px;
+
+        @include mq('sm'){
+            background-position: center center, center -250px;
+        }
+
+        @include mq('md'){
+            background-position: center center, center -350px;
+        }
+
+        @include mq('lg'){
+            background-position: center center, center -400px;
+        }
+
+        @include mq('xl'){
+            background-position: center center, center -660px;
+        }
+
+        @include mq('xxl'){
+            background-position: center center, center -700px;
+        }
+    }
+
+
+    .logo_wrapper{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80px;
+        @include mq('md'){
+            width: 100px;
+        }
+    }
+    .header_content_wrapper{
+        position: absolute;
+        top: 30%;
+        width: 100%;
+        @include mq('md'){
+            top: 45%;
+        }
+    }
+    .row{
+        width: 100%;
+        margin: 0;
+    }
+    .header_text_wrapper{
+        text-align: center;
+       
+        h2{
+            font-weight: 600;
+            margin-bottom: 20px;
+            @include mq('md', 'max'){
+                font-size: 26px;
+            }
+        }
+        p{
+            margin-bottom: 20px;
+        }
+      
+    }
+    .button_wrapper{
+      
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        button{
+            background: transparent;
+            color: $white;
+            font-size: 14px;
+            border: 1px solid $white;
+            border-radius: 5px;
+            width: 160px;
+            padding: 5px;
+        }
+    }
+    .down_arrow_wrapper{
+        text-align: center;
+        cursor: pointer;
+       opacity: 1;
+       position: absolute;
+       bottom: 10%;
+       width: 100%;
+       
+       img{
+           width: 15px;
+       }
+    }
+}
+header{
+    position: relative;
+    height: 100vh;
+}
+
+  @keyframes fadeOut {
+    0% { opacity:1; }
+    50% { opacity:0.5; } 
+    100% { opacity:0; } 
+   }
+
+
+.elementToFadeOut {
+    animation: fadeOut 1s linear forwards;
+}
+
+.home_screen>.container-fluid>.row{
+    display: block; 
+ }

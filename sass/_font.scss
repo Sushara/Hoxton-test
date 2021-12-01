@@ -1,0 +1,23 @@
+/*Fonts*/
+@font-face{
+    font-family: "Helvetica-Light";
+    src: url('../fonts/HelveticaNeue-Light.otf');
+    src: url('../fonts/HelveticaNeue-Light.otf') format('opentype'), url('../fonts/HelveticaNeue-Light.woff') format('woff'), url('../fonts/HelveticaNeueLight.ttf') format('truetype'); //header
+}
+
+@font-face{
+    font-family: "Helvetica-Bold";
+    src: url('../fonts/HelveticaNeueBold.woff');
+    src: url('../fonts/HelveticaNeueBold.woff') format('woff'), url('../fonts/HelveticaNeueBold.ttf') format('truetype'); //header
+}
+
+@font-face{
+    font-family: "Helvetica-CondensedBlack";
+    src: url('../fonts/HelveticaNeueCondensedBlack.woff');
+    src: url('../fonts/HelveticaNeueCondensedBlack.woff') format('woff'), url('../fonts/HelveticaNeueCondensedBlack.ttf') format('truetype'); //header
+}
+
+
+body {
+    font-family: "Helvetica-Light";
+}
